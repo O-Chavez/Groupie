@@ -1,21 +1,55 @@
-/* yellow - #ECD017
+/* yellow - #ECD017 */
 
 /* brown - #221E1F */
 
+html {
+  overflow: hidden;
+}
 
 
 body {
   background: #ffffff;
   color: #221E1F;
+  height: 100vh;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
+.content-wrapper {
+  background-color: #ffffff;
+  position: relative;
+  margin-top: 5em;
+  padding-top: 3em;
+}
+
+.navbar {
+  background-color: #ffffff;
+  z-index: 5;
+  position: sticky;
+  top: 0;
+  border-bottom: solid #ECD017;
+  padding: 0;
+}
 .main-banner {
-  height: 35em;
-  background-color: #221E1F;
+  height: 27em;
+  width: 100vw;
+  margin-top: 5em;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+}
+.main-banner::before {
+  content: "";
+  height: 110vh;
+  width: 100vw;
   background-image: url('https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
   background-repeat: no-repeat;
   background-size: 100vw 45em;
-
+  /* box-sizing: border-box; */
+  position: absolute;
+  z-index: -10;
+  transform: translateZ(-1px) scale(2);
 }
 
 .banner-content {
