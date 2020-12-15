@@ -29,13 +29,14 @@ body {
   z-index: 5;
   position: sticky;
   top: 0;
-  border-bottom: solid #ECD017;
+  border-bottom: solid 3px #ECD017;
+  outline: solid 1px;
   padding: 0;
 }
 .main-banner {
-  height: 27em;
+  height: 30em;
   width: 100vw;
-  margin-top: 5em;
+  /* margin-top: 5em; */
   box-sizing: border-box;
   transform-style: preserve-3d;
 }
@@ -64,6 +65,7 @@ h1 {
 
 .banner-text {
   flex: 1;
+  margin-top: 5em;
 }
 .banner-img {
   flex: 1;
